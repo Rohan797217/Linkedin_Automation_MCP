@@ -56,8 +56,8 @@ This guide will help you set up and run the LinkedIn MCP (Model Context Protocol
 Open a terminal and run:
 
 ```powershell
-git clone <your-repository-url>
-cd linkedin_mcp_python
+git clone https://github.com/YOUR_USERNAME/linkedin-automation-mcp.git
+cd linkedin-automation-mcp
 ```
 
 ---
@@ -202,10 +202,10 @@ To use the LinkedIn MCP server with Claude Desktop (or any MCP-compatible client
    }
    ```
 
-   - The `command` and `args` fields must point to the correct Python executable and the full path to `src/server.py` on your machine. For example, if your project is in `D:/CashRich/2025/LinkedIN/comments/comments_mcp/linkedin_mcp_python/`, then use:
+   - The `command` and `args` fields must point to the correct Python executable and the full path to `src/server.py` on your machine. For example, if your project is cloned to `C:/Users/YourName/linkedin-automation-mcp/`, then use:
 
      ```json
-     "args": ["D:/CashRich/2025/LinkedIN/comments/comments_mcp/linkedin_mcp_python/src/server.py"]
+     "args": ["C:/Users/YourName/linkedin-automation-mcp/src/server.py"]
      ```
 
    - Use your actual credentials and API key (never share these publicly).

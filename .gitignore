@@ -4,6 +4,7 @@
 .env.production
 .env.staging
 .env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -75,5 +76,5 @@ playwright-state.json
 # *.json
 # *.xlsx
 
-# Docker
-.dockerignore
+# Auto-generated analysis files
+REPOSITORY_ANALYSIS.md

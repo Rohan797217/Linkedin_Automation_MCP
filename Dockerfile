@@ -19,9 +19,6 @@ RUN apt-get update && apt-get install -y \
     libasound2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Set working directory
-
-
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip
@@ -32,7 +29,6 @@ RUN playwright install --with-deps chromium
 
 # Copy application code
 COPY src/ ./src/
-COPY .env* ./
 
 # Expose port
 EXPOSE 8000

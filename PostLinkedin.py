@@ -1,5 +1,3 @@
-# filepath: d:\CashRich\2025\LinkedIN\comments\comments_mcp\linkedin_mcp_python\PostLinkedin.py
-
 import os
 import logging
 import asyncio
